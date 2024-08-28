@@ -1,0 +1,111 @@
+.grid>div:nth-child(1) {
+    grid-area: one;
+    height: 160px;
+}
+.grid>div:nth-child(2) {
+    grid-area: two;
+}
+.grid>div:nth-child(3) {
+    grid-area: three;
+}
+.grid>div:nth-child(4) {
+    grid-area: four;
+    height: 80px;
+}
+.grid>div:nth-child(5) {
+    grid-area: five;
+}
+.grid>div:nth-child(6) {
+    grid-area: six;
+}
+.grid>div:nth-child(7) {
+    grid-area: seven;
+}
+.grid>div:nth-child(8) {
+    grid-area: eight;
+}
+.grid>div:nth-child(9) {
+    grid-area: nine;
+}
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'one one one one'
+    'one one one one'
+    'one one one one'
+    'one one one one'
+    'two three four five'
+    'two six four five'
+    'two six seven five'
+    'two six eight nine';  
+}
+.grid>div {
+    color: white;
+    padding: 20px 10px;
+    background-color: orange;
+}
+
+
+/* Second Grid */
+
+.template {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    color: white;
+}
+.template>div {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 10px 0px;
+}
+.template>div:first-child{
+    grid-area: 1/1/2/span 12;
+}
+.template>div:nth-child(2) {
+    grid-area: 2/1/3/span 6;
+}
+.template>div:nth-child(3) {
+    grid-area: 2/7/3/span 6;
+}
+.template>div:nth-child(4){
+    grid-area: 3/1/4/span 4;
+}
+.template>div:nth-child(5){
+    grid-area: 3/5/4/span 4;
+}
+.template>div:nth-child(6){
+    grid-area: 3/9/4/span 4;
+}
+.template>div:nth-child(7){
+    grid-area: 4/1/5/span 3;
+}
+.template>div:nth-child(8){
+    grid-area: 4/4/5/span 3;
+}
+.template>div:nth-child(9){
+    grid-area: 4/7/5/span 3;
+}
+.template>div:nth-child(10){
+    grid-area: 4/10/5/span 3;
+}
+.template>div:nth-child(11){
+    grid-area: 5/1/6/span 2;
+}
+.template>div:nth-child(12){
+    grid-area: 5/3/6/span 2;
+}
+.template>div:nth-child(13){
+    grid-area: 5/5/6/span 2;
+}
+.template>div:nth-child(14){
+    grid-area: 5/7/6/span 2;
+}
+.template>div:nth-child(15){
+    grid-area: 5/9/6/span 2;
+}
+.template>div:nth-child(16){
+    grid-area: 5/11/6/span 2;
+}
